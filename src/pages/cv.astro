@@ -1,0 +1,118 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Dynamic data professional with around 4 years of experience in data-quality improvement, complex dataset analysis, and predictive modeling, now pursuing a Senior Data Analyst role.  
+    Key achievements include the resolution of data duplicity in a 600M clinical notes table and leading to better decisions on USD 14 million+ disbursal through boosting intent model performance by 7.5%.  
+    Known for critical thinking, leading cross-functional collaboration, and providing strategic recommendation.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Healthcare Data Analyst"
+      subtitle="From Jan 2023 to Present at Nference Labs, Bengaluru"
+    >
+<ul class="ml-4 grid gap-2">
+    <li>➤ Developed a Python-based diagnosis data dashboard, enabling product teams to track data version trends and improve clinical data accessibility for users.</li>
+    <li>➤ Cut data-access time by 80% and slashed manual coding effort by developing nferR, a HIPAA-compliant R SDK that unifies authentication and streamlines querying across multiple clinical platforms.</li>
+    <li>➤ Led cross-functional collaboration with product and customer success teams to design and deliver data tours, driving seamless onboarding for 20+ customers and enhancing data discoverability.</li>
+    <li>➤ Spearheaded data release processes by collaborating with product and engineering teams, enhancing documentation and delivery workflows to improve client experience and data reliability.</li>
+    <li>➤ Enabled resumption of a client project by resolving critical note duplicity in a 60k patient cohort.</li>
+    <li>➤ Devised a new data-driven approach for duplicate note marking to address data duplicity caused by data migration within different EHR systems in recent decades.</li>
+  </ul>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Data Analyst"
+      subtitle="From August 2021 to Oct 2022 at Smartcoin Financials, Bengaluru"
+    >
+      <ul class="ml-4 grid gap-2">
+        <li>➤Improved business decision-making for a USD 14 million+ quarterly disbursal by increasing the average AUC of intent prediction models by 7.5%, driving more accurate and efficient allocations.</li>
+        <li>➤Created new cohort-specific models using Python by implementing various strategies for sampling and segmentation of customers.</li>
+        <li>➤Engineered 180+ SQL-based features for ML models, optimizing customer segmentation and risk assessment for lending products.</li>
+        <li>➤Developed location-based features to enhance risk stratification, reducing default exposure and enabling more informed credit decisions via interactive Tableau dashboards.</li>
+        <li>➤Reduced loan offering time by 20% by tripling SMS parsing speed through the implementation of efficient parsing patterns.</li>
+      </ul>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Business Development Intern"
+      subtitle="From November 2019 to February 2020 at Waxwing AI, Bengaluru"
+    >
+       <ul class="ml-4 grid gap-2">
+        <li>➤ Built a 500+ prospect database in the CRM software by researching the market, and identifying customers' needs.</li>
+        <li>➤ Successfully closed 2 inspection project deals by networking among 200+ businesses, developing leads, and designing sales funnel strategically.</li>
+      </ul>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+<div class="time-line-container mb-10">
+  <TimeLineElement
+    title="Indian Institute Of Technology, Mandi"
+    subtitle="B.Tech in Mechanical Engineering, August 2017 to August 2021"
+  >
+
+    <div>Pursued a minor in management studies, focusing on finance and organizational behavior.</div>
+  </TimeLineElement>
+
+<TimeLineElement
+  title="Delhi Public School, Hisar"
+  subtitle="Non-Medical Sciences, 2015 to 2017"
+>
+  <div>Scored 88% in CBSE Class 12 Board Exams.</div>
+</TimeLineElement>
+</div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.hackerrank.com/certificates/de9d6f239d58" target="_blank">SQL Advanced</a>
+    </li>
+    <li>
+      <a href="https://www.udemy.com/certificate/UC-e44e041d-9bf6-40f5-a827-4094f463c1ed/" target="_blank">Credit Risk Modelling in Python</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Python</li>
+    <li>A/B Testing</li>
+    <li>Machine Learning</li>
+
+    <li>R</li>
+    <li>BigQuery</li>
+    <li>Tableau</li>
+    <li>Advanced SQL</li>
+   
+    <li>Google Analytics</li>
+     <li>MS Excel</li>
+    <li>Apache Spark</li>
+    
+    
+  
+  
+    <li>Azure</li>
+    <li>RDBMS</li>
+      <li>Feature Engineering</li>
+    <li>Descriptive Analytics</li>
+  </ul>
+</BaseLayout>
